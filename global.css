@@ -317,3 +317,9 @@ form > *:last-child {
   border-top-color: var(--clr-primary-5);
   animation: spinner 0.6s linear infinite;
 }
+
+hr {
+  margin: 2rem 0;
+  border: dotted;
+  border-top: 4px solid #000; /* Change the thickness and color as desired */
+}

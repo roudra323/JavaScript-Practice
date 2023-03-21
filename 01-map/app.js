@@ -21,12 +21,11 @@ const people = [
   },
 ];
 
-const info = people.map((person) => {
-  //   console.log(
-  //     `Name : ${person.name}, Age : ${person.age}, Position : ${person.position}`
-  //   );
+const info = people.map(
+  (person) =>
+    `<h2>Name : ${person.name}<h2> <h2>Age : ${person.age}<h2> <h2>Position : ${person.position}<h2/><hr/>`
+);
 
-  //   console.log(person);
+const result = document.querySelector("#result");
 
-  return person;
-});
+result.innerHTML = info.join("");
