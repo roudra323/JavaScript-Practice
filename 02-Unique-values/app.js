@@ -35,4 +35,9 @@ const categories = [
   ),
 ];
 
-console.log(categories);
+const result = document.querySelector(".result");
+result.innerHTML = categories
+  .map((category) => {
+    return `<button>${category}</button>`;
+  })
+  .join("");
